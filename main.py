@@ -27,7 +27,7 @@ if __name__ == "__main__":
     driver = webdriver.Chrome()
     driver.get(f'https://www.douyin.com/search/{key_word}')
     time.sleep(3)
-    drop_down()
+    drop_down(down_step)
 
     # 视频文案、视频链接、昵称
     titles = []  # 视频文案
