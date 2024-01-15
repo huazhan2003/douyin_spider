@@ -28,7 +28,6 @@ if __name__ == "__main__":
     driver.get(f'https://www.douyin.com/search/{key_word}?type=video')
     time.sleep(3)
     drop_down(down_step)
-    driver.quit()
 
     # 视频文案、视频链接、昵称
     titles = []  # 视频文案
@@ -77,3 +76,4 @@ if __name__ == "__main__":
 
     # 将DataFrame写入Excel文件
     df.to_excel('output.xlsx', index=True)
+    driver.quit()
