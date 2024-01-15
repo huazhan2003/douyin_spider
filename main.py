@@ -25,7 +25,7 @@ def drop_down(down_step):
 if __name__ == "__main__":
     # 打开网页，滑动窗口，显示更多的视频
     driver = webdriver.Chrome()
-    driver.get(f'https://www.douyin.com/search/{key_word}')
+    driver.get(f'https://www.douyin.com/search/{key_word}?type=video')
     time.sleep(3)
     drop_down(down_step)
 
