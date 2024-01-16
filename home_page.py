@@ -27,6 +27,7 @@ def get_home_page(url, wait_time):
         summary_element = driver.find_element(By.XPATH, '//*[@id="douyin-right-container"]/div[2]/div/div/div[2]/div[2]/div[3]/div/span/span/span/span/span/span')
         summary = summary_element.text
         home_info.append(summary)
+        driver.close()
     finally:
         # 关闭浏览器
         driver.quit()
