@@ -27,6 +27,7 @@ def get_video_page(url, wait_time):
         homelink = driver.find_element(By.CSS_SELECTOR, 
         '#douyin-right-container > div:nth-child(2) > div > div.leftContainer.gkVJg5wr > div.JBvFTwr7 > div > div.UbblxGZr > div.WdX5lXbX > a').get_attribute('href')
         video_info.append(homelink)
+        driver.close()
     finally:
         # 关闭浏览器
         driver.quit()
